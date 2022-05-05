@@ -1,0 +1,35 @@
+﻿@model Secretaria.Model.TbMatricula
+
+@{
+    ViewData["Title"] = "Detalhes da Matrículas";
+}
+
+<h1>Detalhes da Matrículas</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Situacao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Situacao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AlunoIdAlunoNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AlunoIdAlunoNavigation.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CursoIdCursoNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CursoIdCursoNavigation.NomeCurso)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdMatricula" class="btn btn-light btn-sm">Editar</a> |
+    <a asp-action="Index" class="btn btn-danger btn-sm">Voltar</a>
+</div>

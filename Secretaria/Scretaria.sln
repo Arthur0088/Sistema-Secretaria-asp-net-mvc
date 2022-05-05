@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Secretaria.Model", "Secretaria.Model\Secretaria.Model.csproj", "{F72D48DA-E880-4366-B60B-BA5ADADB34DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Secretaria.View", "Secretaria.View\Secretaria.View.csproj", "{E2B85A65-F107-42B1-A437-0AE52B5274FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F72D48DA-E880-4366-B60B-BA5ADADB34DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72D48DA-E880-4366-B60B-BA5ADADB34DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72D48DA-E880-4366-B60B-BA5ADADB34DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72D48DA-E880-4366-B60B-BA5ADADB34DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2B85A65-F107-42B1-A437-0AE52B5274FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B85A65-F107-42B1-A437-0AE52B5274FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B85A65-F107-42B1-A437-0AE52B5274FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B85A65-F107-42B1-A437-0AE52B5274FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81B9A0AB-69E3-4CFE-B367-5C436207FCFD}
+	EndGlobalSection
+EndGlobal

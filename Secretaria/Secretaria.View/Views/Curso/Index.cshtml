@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Secretaria.Model.TbCurso>
+
+@{
+    ViewData["Title"] = "Cursos";
+}
+
+<h1>Cursos</h1>
+
+<p >
+    <a asp-action="Create" class="btn btn-light btn-sm ">Adicionar novo Curso</a>
+</p>
+<table class="table table-primary table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomeCurso)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeCurso)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCurso" class="btn btn-light btn-sm">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCurso" class="btn btn-light btn-sm">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCurso" class="btn btn-light btn-sm">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

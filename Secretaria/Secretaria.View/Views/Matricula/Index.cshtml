@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Secretaria.Model.TbMatricula>
+
+@{
+    ViewData["Title"] = "Matrículas";
+}
+
+<h1>Matrículas</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-light btn-sm">Criar nova matrícula </a>
+</p>
+<table class="table table-primary table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AlunoIdAlunoNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CursoIdCursoNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Situacao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Situacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlunoIdAlunoNavigation.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CursoIdCursoNavigation.NomeCurso)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdMatricula" class="btn btn-light btn-sm">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdMatricula" class="btn btn-light btn-sm">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdMatricula" class="btn btn-light btn-sm">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
